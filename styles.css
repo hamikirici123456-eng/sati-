@@ -318,6 +318,38 @@ textarea {
   box-shadow: 0 16px 32px rgba(18, 140, 74, 0.28);
 }
 
+.floating-call {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 80;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  color: #fff;
+  background: linear-gradient(135deg, #034f82, #0782bd);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: 0 18px 36px rgba(3, 79, 130, 0.35);
+}
+
+.floating-call svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.floating-call:focus-visible {
+  outline: 3px solid rgba(13, 180, 236, 0.35);
+  outline-offset: 4px;
+}
+
 .btn--ghost {
   color: var(--paper);
   background: rgba(255, 255, 255, 0.1);
@@ -1060,6 +1092,20 @@ textarea {
   .brand {
     width: 160px;
     max-width: calc(100vw - 88px);
+  }
+
+  .floating-call {
+    right: auto;
+    left: min(calc(100vw - 72px), 318px);
+    top: calc(100vh - 74px);
+    bottom: auto;
+    width: 56px;
+    height: 56px;
+  }
+
+  .floating-call svg {
+    width: 24px;
+    height: 24px;
   }
 
   .site-menu {
