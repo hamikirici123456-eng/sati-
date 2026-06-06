@@ -17,22 +17,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   color: var(--ink);
   background: linear-gradient(180deg, #ffffff 0%, #f4fbff 52%, #ffffff 100%);
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   line-height: 1.6;
-}
-
-.site-header,
-main,
-.site-footer {
-  animation: contentEnter 800ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 img,
@@ -123,11 +113,11 @@ textarea {
 }
 
 .navbar__inner {
-  min-height: 90px;
+  min-height: 88px;
 }
 
 .brand {
-  width: 286px;
+  width: 230px;
   max-width: 45vw;
 }
 
@@ -159,7 +149,6 @@ textarea {
   background: linear-gradient(90deg, var(--blue), var(--cyan));
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 180ms ease;
 }
 
 .site-menu a:hover::after,
@@ -176,6 +165,7 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-height: 44px;
   padding: 0 20px;
   color: var(--paper);
@@ -184,6 +174,17 @@ textarea {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
   box-shadow: 0 12px 24px rgba(3, 79, 130, 0.28);
+}
+
+.nav-cta svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .menu-toggle {
@@ -293,7 +294,6 @@ textarea {
   border-radius: 6px;
   font-weight: 900;
   cursor: pointer;
-  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
 }
 
 .btn svg {
@@ -306,15 +306,16 @@ textarea {
   stroke-linejoin: round;
 }
 
-.btn:hover,
-.btn:focus-visible {
-  transform: translateY(-2px);
-}
-
 .btn--primary {
   color: var(--paper);
   background: linear-gradient(135deg, #034f82, #0b8bc7);
   box-shadow: 0 16px 32px rgba(3, 79, 130, 0.3);
+}
+
+.btn--whatsapp {
+  color: var(--paper);
+  background: linear-gradient(135deg, #128c4a, #25d366);
+  box-shadow: 0 16px 32px rgba(18, 140, 74, 0.28);
 }
 
 .btn--ghost {
@@ -563,7 +564,6 @@ textarea {
   position: relative;
   overflow: hidden;
   padding: 24px;
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .service-card::before,
@@ -583,7 +583,6 @@ textarea {
 .process-card:hover,
 .project-card:hover,
 .card-panel:hover {
-  transform: translateY(-4px);
   border-color: #9ce6f7;
   box-shadow: 0 20px 50px rgba(3, 43, 69, 0.13);
 }
@@ -793,7 +792,6 @@ textarea {
   stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: transform 180ms ease;
 }
 
 .faq-item p {
@@ -804,10 +802,6 @@ textarea {
 
 .faq-item.is-open p {
   display: block;
-}
-
-.faq-item.is-open button svg {
-  transform: rotate(180deg);
 }
 
 .contact-section {
@@ -941,20 +935,6 @@ textarea {
   color: var(--muted);
 }
 
-.reveal-on-scroll {
-  opacity: 0;
-  filter: blur(8px);
-  transform: translateY(46px) scale(0.99);
-  transition: opacity 650ms ease, filter 650ms ease, transform 650ms cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, filter, transform;
-}
-
-.reveal-on-scroll.is-visible {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateY(0);
-}
-
 .site-footer {
   padding: 32px 0;
   background: #f5fcff;
@@ -962,7 +942,7 @@ textarea {
 }
 
 .site-footer img {
-  width: 236px;
+  width: 190px;
 }
 
 .site-footer p,
@@ -1074,11 +1054,11 @@ textarea {
 
   .navbar__inner {
     gap: 14px;
-    min-height: 72px;
+    min-height: 68px;
   }
 
   .brand {
-    width: 214px;
+    width: 160px;
     max-width: calc(100vw - 88px);
   }
 
@@ -1183,43 +1163,9 @@ textarea {
   }
 }
 
-@keyframes pageEnter {
-  from {
-    opacity: 0;
-    filter: blur(14px);
-    transform: translateY(88px) scale(0.975);
-  }
-
-  to {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes contentEnter {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateY(32px) scale(0.99);
-  }
-
-  34% {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateY(32px) scale(0.99);
-  }
-
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0) scale(1);
-  }
-}
-
 @media (max-width: 420px) {
   .brand {
-    width: 188px;
+    width: 150px;
   }
 
   .hero h1,
@@ -1239,7 +1185,7 @@ textarea {
 
 @media (max-width: 360px) {
   .brand {
-    width: 178px;
+    width: 142px;
   }
 
   .hero h1,

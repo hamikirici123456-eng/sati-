@@ -31,28 +31,6 @@ if (menuToggle && siteMenu) {
   });
 }
 
-const revealItems = document.querySelectorAll(
-  ".section, .trust-band, .contact-section, .inner-hero, .service-card, .process-card, .project-card, .card-panel, .contact-form, .contact-info-card"
-);
-
-revealItems.forEach((item) => item.classList.add("reveal-on-scroll"));
-
-const revealObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    });
-  },
-  {
-    rootMargin: "0px 0px -28% 0px",
-    threshold: 0.32,
-  }
-);
-
-revealItems.forEach((item) => revealObserver.observe(item));
-
 faqButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const item = button.closest(".faq-item");
@@ -69,7 +47,7 @@ if (contactForm) {
     const status = contactForm.querySelector(".form-status");
 
     if (status) {
-      status.textContent = "Talebiniz hazırlandı. En hızlı dönüş için +90 552 64 66 numarasını arayabilir veya WhatsApp üzerinden yazabilirsiniz.";
+      status.textContent = "Talebiniz hazırlandı. En hızlı dönüş için +90 0552 64 66 numarasını arayabilir veya WhatsApp üzerinden yazabilirsiniz.";
     }
 
     contactForm.reset();
