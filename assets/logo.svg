@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 96" role="img" aria-labelledby="title desc">
+  <title id="title">Özyurt Tesisat</title>
+  <desc id="desc">Boru, su damlası ve anahtar detaylı mavi beyaz tesisatçı logosu</desc>
+  <defs>
+    <linearGradient id="markFill" x1="10" y1="8" x2="86" y2="88" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#15b7ee"/>
+      <stop offset="0.58" stop-color="#067fc0"/>
+      <stop offset="1" stop-color="#03466e"/>
+    </linearGradient>
+    <linearGradient id="pipeFill" x1="28" y1="33" x2="71" y2="73" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d7f6ff"/>
+    </linearGradient>
+  </defs>
+
+  <g>
+    <rect x="8" y="8" width="80" height="80" rx="16" fill="url(#markFill)"/>
+    <path d="M27 58h17c7.7 0 14-6.3 14-14V31" fill="none" stroke="url(#pipeFill)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M58 31h13" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M33 58v13" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M50 28c7.8 9.4 12.2 16.2 12.2 23.2A12.2 12.2 0 0 1 38 51.2C38 44.2 42.2 37.4 50 28Z" fill="#ffffff"/>
+    <path d="M38.5 68.5 66.5 40.5" fill="none" stroke="#03466e" stroke-width="6.2" stroke-linecap="round"/>
+    <path d="M68.5 31.5a11.2 11.2 0 0 0-9.3 3.2l6.4 6.4-7.4 7.4-6.4-6.4a11.2 11.2 0 0 0-3.2 9.3" fill="none" stroke="#ffffff" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="47" cy="54" r="4.7" fill="#0788c8"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="106" y="40" font-size="32" font-weight="900" fill="#05395d" letter-spacing="0">ÖZYURT</text>
+    <text x="108" y="66" font-size="23" font-weight="900" fill="#067fc0" letter-spacing="0">TESİSAT</text>
+    <path d="M108 75h172" stroke="#15b7ee" stroke-width="4" stroke-linecap="round"/>
+    <path d="M288 75h28c6.8 0 12-5.2 12-12v-9" fill="none" stroke="#067fc0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
