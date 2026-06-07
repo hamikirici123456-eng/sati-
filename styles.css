@@ -113,17 +113,18 @@ textarea {
 }
 
 .navbar__inner {
-  min-height: 88px;
+  min-height: 92px;
 }
 
 .brand {
-  width: 230px;
+  width: 300px;
   max-width: 45vw;
 }
 
 .brand img {
   width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 
 .site-menu {
@@ -1004,7 +1005,8 @@ textarea {
 }
 
 .site-footer img {
-  width: 190px;
+  width: 248px;
+  border-radius: 8px;
 }
 
 .site-footer p,
@@ -1116,11 +1118,11 @@ textarea {
 
   .navbar__inner {
     gap: 14px;
-    min-height: 68px;
+    min-height: 76px;
   }
 
   .brand {
-    width: 160px;
+    width: 186px;
     max-width: calc(100vw - 88px);
   }
 
@@ -1241,7 +1243,7 @@ textarea {
 
 @media (max-width: 420px) {
   .brand {
-    width: 150px;
+    width: 172px;
   }
 
   .hero h1,
@@ -1261,7 +1263,7 @@ textarea {
 
 @media (max-width: 360px) {
   .brand {
-    width: 142px;
+    width: 162px;
   }
 
   .hero h1,
